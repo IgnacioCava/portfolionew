@@ -16,5 +16,5 @@ i18n
     },
     lng: lngDetector(),
     fallbackLng: "en",
-    debug: true,
+    debug: false,
   });

@@ -1,5 +1,9 @@
 const detectedLanguage = () => {
-  const userLanguages = navigator.languages;
+  let userLanguages;
+  if (typeof navigator !== "undefined" && navigator.languages) {
+    userLanguages = navigator.languages;
+  }
+  if (!userLanguages) return "en";
   const firstLang = userLanguages[0]?.toLowerCase() || "en";
 
   let detectedLang = "en";

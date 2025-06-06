@@ -12,11 +12,10 @@ const useSectionObserver = (
     lastClicked.current = lastClickedAt;
   }, [lastClickedAt]);
 
-  const observer = useMemo(
-    () =>
-      new IntersectionObserver(
+  const observer = useMemo(() => {
+    if (typeof IntersectionObserver !== "undefined")
+      return new IntersectionObserver(
         (entries) => {
-          console.log("xd");
           entries.forEach((entry) => {
             if (
               entry.isIntersecting &&
@@ -31,15 +30,15 @@ const useSectionObserver = (
           rootMargin: "0px",
           threshold: 0.4,
         }
-      ),
-    [callback]
-  );
-  
+      );
+    else return null;
+  }, [callback]);
+
   useEffect(() => {
     navbarTabs.forEach((tag) => {
       const element = document.querySelector(tag.hash);
       if (!element) return;
-      observer.observe(element);
+      observer?.observe(element);
     });
   }, [observer]);
 };

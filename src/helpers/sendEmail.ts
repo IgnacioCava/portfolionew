@@ -1,6 +1,7 @@
 import { validateForm } from "@lib/utils";
-import axios, { AxiosError } from "axios";
+import { AxiosError } from "axios";
 import type { FormEvent } from "react";
+import axiosInstance from "@lib/axiosInstance";
 
 const sendEmail = async (event: FormEvent<HTMLFormElement>) => {
   event.preventDefault();
@@ -23,7 +24,7 @@ const sendEmail = async (event: FormEvent<HTMLFormElement>) => {
       senderEmail,
     };
 
-    const response = await axios.post("/api/send-email", emailData);
+    const response = await axiosInstance.post("/api/send-email", emailData);
     return response.data;
   } catch (error) {
     if (error instanceof AxiosError) return error.response?.data;

@@ -6,7 +6,9 @@ const useCopyToClipboard = (text: string, delay: number) => {
   const timeoutId = useRef<NodeJS.Timeout | null>(null);
   const copy = async () => {
     try {
-      await navigator.clipboard.writeText(text);
+      if (typeof navigator !== "undefined" && navigator.clipboard) {
+        await navigator.clipboard.writeText(text);
+      }
       setCopied(true);
       if (timeoutId.current) {
         clearTimeout(timeoutId.current);
