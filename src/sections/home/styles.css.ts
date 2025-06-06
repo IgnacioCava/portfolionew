@@ -30,7 +30,7 @@ export const ContactOptions = style({
       width: "fit-content",
       display: "grid",
       gridTemplateColumns: "1fr auto",
-      justifySelf: 'center'
+      justifySelf: "center",
     },
   },
 });
@@ -46,6 +46,7 @@ const MediaButton = style({
   whiteSpace: "nowrap",
   boxSizing: "border-box",
   gap: 10,
+  justifyContent: "center",
   ":hover": {
     scale: "1.1",
   },
