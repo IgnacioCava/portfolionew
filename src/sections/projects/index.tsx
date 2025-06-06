@@ -1,6 +1,5 @@
 import { ProjectCard } from "@components";
 import * as S from "./styles.css";
-import image from "@assets/warframe.jpg";
 import { projects } from "@lib/data";
 import { useTranslation } from "react-i18next";
 
@@ -17,7 +16,6 @@ const ProjectsSection = () => {
             description={project.description}
             techStack={project.stack}
             links={project.links}
-            image={image}
           />
         ))}
       </div>

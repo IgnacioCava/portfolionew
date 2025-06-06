@@ -6,7 +6,6 @@ interface ProjectCardProps {
   title: string;
   description: string;
   techStack: string[];
-  image: string;
   item: number;
   links: {
     github: string;
