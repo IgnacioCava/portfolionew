@@ -1,6 +1,7 @@
 import me from "../../assets/me.jpg";
 import * as S from "./styles.css";
-import CV from "../../assets/pdf/CV Ignacio Cava - En.pdf";
+import CVES from "../../assets/pdf/CV Ignacio Cava - Es.pdf";
+import CVEN from "../../assets/pdf/CV Ignacio Cava - En.pdf";
 import {
   //ArrowRight,
   DownloadIcon,
@@ -11,7 +12,7 @@ import { Bold } from "@components";
 import { Trans, useTranslation } from "react-i18next";
 
 const HomeSection = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   return (
     <section id="home" className={S.HomeSectionContainer}>
       <img
@@ -34,7 +35,12 @@ const HomeSection = () => {
         <a href="#contact" className={S.ContactButton} draggable={false}>
           {t("Contact me here")} {/*<ArrowRight height={20} width={20} />*/}
         </a>
-        <a className={S.CVButton} href={CV} download draggable={false}>
+        <a
+          className={S.CVButton}
+          href={i18n.language === "es" ? CVES : CVEN}
+          download
+          draggable={false}
+        >
           {t("Download CV")} <DownloadIcon height={20} width={20} />
         </a>
         <a
