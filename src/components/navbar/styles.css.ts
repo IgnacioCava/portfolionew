@@ -41,7 +41,11 @@ export const NavbarContainer = style({
     zIndex: -1,
   },
   "@media": {
-    [mediaBreakpoints.mobile]: {},
+    [mediaBreakpoints.mobile]: {
+      ':before': {
+        borderRadius: '8px'
+      }
+    },
     [mediaBreakpoints.tablet]: {
       flexWrap: "wrap",
       top: 0,
@@ -50,7 +54,7 @@ export const NavbarContainer = style({
       borderRadius: 0,
       width: "100%",
       padding: 5,
-      columnGap: 10,
+      columnGap: 0,
     },
     [mediaBreakpoints.desktop]: {},
   },
@@ -66,6 +70,11 @@ export const NavbarItem = recipe({
     whiteSpace: "nowrap",
     ":hover": {
       color: "oklch(0.13 0.028 261.692)",
+    },
+    "@media": {
+      [mediaBreakpoints.mobile]: {
+        padding: "5px",
+      },
     },
   },
   variants: {

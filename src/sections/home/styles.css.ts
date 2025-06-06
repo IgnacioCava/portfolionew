@@ -27,7 +27,10 @@ export const ContactOptions = style({
   gap: 8,
   "@media": {
     [mediaBreakpoints.mobile]: {
-      flexWrap: "wrap",
+      width: "fit-content",
+      display: "grid",
+      gridTemplateColumns: "1fr auto",
+      justifySelf: 'center'
     },
   },
 });

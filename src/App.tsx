@@ -20,11 +20,11 @@ function App() {
   return (
     <div className={`${AppContainer} ${darkMode ? darkTheme : lightTheme}`}>
       <div className={TogglersContainer}>
-        <Navbar />
         <ToggleDarkMode state={[darkMode, setDarkMode]} />
         <LanguageSelector />
       </div>
       <main>
+        <Navbar />
         <HomeSection />
         <AboutSection />
         <ProjectsSection />

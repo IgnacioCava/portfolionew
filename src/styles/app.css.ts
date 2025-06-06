@@ -68,11 +68,13 @@ export const TogglersContainer = style({
       flexDirection: "row",
     },
     [mediaBreakpoints.mobile]: {
-      top: 90,
+      top: 'unset',
+      bottom: 10,
       right: 10,
       flexDirection: "row",
     },
     [mediaBreakpoints.mobileS]: {
+      top: 'unset',
       bottom: 10,
       right: 10,
       flexDirection: "row",
