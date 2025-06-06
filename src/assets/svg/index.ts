@@ -1,0 +1,14 @@
+export { default as DownloadIcon } from "./download.svg?react";
+export { default as LinkedInIcon } from "./linkedin.svg?react";
+export { default as GitHubIcon } from "./github.svg?react";
+export { default as ArrowRight } from "./arrowRight.svg?react";
+export { default as Moon } from "./moon.svg?react";
+export { default as Sun } from "./sun.svg?react";
+export { default as Education } from "./education.svg?react";
+export { default as EducationFill } from "./education-fill.svg?react";
+export { default as Work } from "./work.svg?react";
+export { default as WorkFill } from "./work-fill.svg?react";
+export { default as Tick } from "./tick.svg?react";
+export { default as USAFlag } from "./usa-flag.svg?react";
+export { default as ARGFlag } from "./arg-flag.svg?react";
+export { default as Internet } from "./internet.svg?react";
