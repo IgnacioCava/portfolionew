@@ -42,12 +42,12 @@
       "item1": {
         "title": "Frontend Developer",
         "location": "Remotebase",
-        "description": "Desarrollé de una red social basada en Web3 con comunicación en tiempo real.\n Remodelé el frontend, reduciendo tiempos de renderizado y mejorando la calidad de comunicación al migrar de componentes de clase e implementar React Hooks.\n Escribí tests automatizados con Jest y Testing Library."
+        "description": "Desarrollé una red social basada en Web3 con comunicación en tiempo real.\n Remodelé el frontend, reduciendo tiempos de renderizado y mejorando la calidad de comunicación al migrar de componentes de clase e implementar React Hooks.\n Escribí tests automatizados con Jest y Testing Library."
       },
       "item2": {
         "title": "Freelance Developer",
-        "location": "Rey de barba",
-        "description": "Desarrollé una app móbil para la peluquería de un cliente.\n Hecho con React Native y MongoDB."
+        "location": "Rey de Barba",
+        "description": "Desarrollé una app móvil para la peluquería de un cliente.\n Hecha con React Native y MongoDB."
       },
       "item3": {
         "title": "Fullstack Developer",
@@ -63,20 +63,20 @@
       "textarea-placeholder": "Tu mensaje",
       "error": {
         "email": {
-          "EMAIL_MISSING": "Por favor agregar tu email",
+          "EMAIL_MISSING": "Por favor agrega tu email",
           "EMAIL_TOO_LONG": "El email proporcionado es muy largo",
           "EMAIL_INVALID_FORMAT": "Por favor agrega un email válido"
         },
         "message": {
           "MESSAGE_MISSING": "Por favor agrega tu mensaje",
-          "MESSAGE_TOO_LONG": "El mensaje proporcionado es muy largo",
+          "MESSAGE_TOO_LONG": "El mensaje es demasiado largo",
           "MESSAGE_INVALID_FORMAT": "Por favor agrega un mensaje válido"
         }
       },
       "message-sent": {
         "MESSAGE_SUCCESS": "Gracias por tu mensaje, voy a estar en contacto cuanto antes.",
         "RATE_LIMIT_REACHED": "Ya enviaste muchos mensajes, por favor intentá en unas horas.",
-        "ALREADY_SENT": "Ya enviaste un mensaje anteriormente, muchas gracias",
+        "ALREADY_SENT": "Ya enviaste un mensaje anteriormente, muchas gracias.",
         "UNKNOWN_ERROR": "Hubo un error al enviar tu mensaje, por favor intenta más tarde."
       }
     }
@@ -84,7 +84,7 @@
   "component": {
     "navbar": {
       "home": "Inicio",
-      "about": "Sobre mi",
+      "about": "Sobre mí",
       "projects": "Proyectos",
       "experience": "Experiencia",
       "skills": "Habilidades",
