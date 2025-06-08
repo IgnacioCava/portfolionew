@@ -10,7 +10,7 @@
     "about": {
       "title": "Sobre mí",
       "introduction": "Tuve mi primer contacto con la programación en la secundaria, donde aprendí Ladder, Assembly y un poco de C y C++. Fue ahí donde descubrí mi amor por la programación, y supe que quería vivir de esto. Después de eso, decidí inscribirme en un bootcamp de programación, donde aprendí <1>desarrollo web full-stack</1>.",
-      "stack": "My stack principal es <1>React, Next.js, Node.js, Express.js, GraphQL, PostgreSQL</1> y <1>MongoDB</1>, junto a <1>TypeScript</1> y <1>Prisma</1> o <1>Sequelize</1>. Me emociona aprender nuevas tecnologías."
+      "stack": "Mi stack principal es <1>React, Next.js, Node.js, Express.js, GraphQL, PostgreSQL</1> y <1>MongoDB</1>, junto a <1>TypeScript</1> y <1>Prisma</1> o <1>Sequelize</1>. Me emociona aprender nuevas tecnologías."
     },
     "skills": {
       "title": "Mis Habilidades",
